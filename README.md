@@ -1,3 +1,7 @@
+## Name: Renick Fabian Rajesh
+## Reg No: 212224230227
+## Date: 24/07/2026
+
 # EX-NO-6-Pseudo-Random-Number
 
 # AIM: 
@@ -11,7 +15,31 @@ Pass the value for number of iterations and print the numbers.
 End the program.
 
 # PROGRAM:
+```
+#include<stdio.h> 
+#include<stdlib.h> 
+#include<time.h> 
+int main() 
+{ 
+int count, min, max; 
+printf("Enter the number of random numbers to generate: "); 
+scanf("%d", &count); 
+printf("Enter the minimum value: ");  
+scanf("%d", &min); 
+printf("Enter the maximum value: ");  
+scanf("%d", &max);  
+srand(time(NULL));  
+printf("Pseudorandom numbers:\n"); for (int i = 0; i < count; i++) 
+{int random_number = (rand() % (max - min + 1)) + min;  
+printf("%d\n", random_number); 
+} 
+return 0; 
+}
+```
 
 # OUTPUT:
+<img width="1920" height="862" alt="image" src="https://github.com/user-attachments/assets/37381b53-9388-498b-b2dd-368b8b01a4c8" />
+
 
 # RESULT:
+The program is executed successfully
